@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Poster from './components/Poster';
 import Poster2 from './components/Poster2';
 import Poster3 from './components/Poster3';
+import SpinWheel from './components/SpinWheel';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
       <Poster3/>
       <ContactForm/>
       <Footer/>
+      <SpinWheel/>
     </div>
   );
 }
