@@ -274,3 +274,43 @@ body{
 .footer-icon:hover {
   color: #007bff;
 }
+.spin-button {
+  background-color: transparent;
+  border: 2px solid #FFC107;
+  color: #FFC107;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.spin-button:hover {
+  background-color: #FFC107;
+  color: #fff;
+}
+
+.button-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Optional: Add animation for button hover effect */
+.spin-button:hover {
+  animation-name: spin-animation;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

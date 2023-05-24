@@ -27,6 +27,9 @@ const MyCarousel = () => {
             <br /> With its engaging interface and thrilling gameplay, WheelDeal
             brings a new level of excitement to the world of online shopping.
           </p>
+          <button className="spin-button">
+            <span className="button-text">Let's Spin</span>
+          </button>
         </div>
       </div>
       <div>
@@ -37,12 +40,17 @@ const MyCarousel = () => {
         <div className="carousel-content">
           <h1>Elevate Your Shopping Experience with Every Spin!</h1>
           <p>
-            At WheelDeal, we believe that shopping should be an adventure. <br />With
-            every exhilarating spin, you'll not only discover incredible
-            discounts but also elevate your shopping experience to new heights.<br />
+            At WheelDeal, we believe that shopping should be an adventure.{" "}
+            <br />
+            With every exhilarating spin, you'll not only discover incredible
+            discounts but also elevate your shopping experience to new heights.
+            <br />
             Brace yourself for a thrilling journey filled with surprises and
             unbeatable deals.
           </p>
+          <button className="spin-button">
+            <span className="button-text">Let's Spin</span>
+          </button>
         </div>
       </div>
       <div>
@@ -59,6 +67,9 @@ const MyCarousel = () => {
             is your gateway to a treasure trove of savings.
             <br /> Get ready to embark on an epic discount-hunting journey!
           </p>
+          <button className="spin-button">
+            <span className="button-text">Let's Spin</span>
+          </button>
         </div>
       </div>
     </Carousel>
