@@ -7,7 +7,7 @@ const Navbar = () => {
         <div className="container">
           <div className="navbar-collapse">
             <div className="d-flex justify-content-center">
-            <a href="#" className="icon-a">
+              <a href="#" className="icon-a">
                 <i className="ri-instagram-fill nav-icon"></i>
               </a>
               <a href="#" className="icon-a">
@@ -22,22 +22,14 @@ const Navbar = () => {
               </a> */}
             </div>
             <div className="d-flex justify-content-first mid">
-            <a className="navbar-brand" href="#">
+              <a className="navbar-brand" href="#">
                 WheelDeal
               </a>
-              {/* <a href="#" className="icon-a">
-                <i className="ri-instagram-fill nav-icon"></i>
-              </a>
-              <a href="#" className="icon-a">
-                <i className="ri-twitter-fill nav-icon"></i>
-              </a>
-              <a href="#" className="icon-a">
-                <i className="ri-facebook-circle-fill nav-icon"></i>
-              </a> */}
             </div>
-            <div className="d-flex justify-content-end">
-              <button className="btn btn-primary">Login</button>
-            </div>
+
+            <a href="#" className="icon-a d-flex justify-content-end">
+              <i class="ri-account-circle-fill nav-icon"></i>
+            </a>
           </div>
         </div>
       </nav>

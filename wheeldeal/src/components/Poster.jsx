@@ -3,7 +3,8 @@ import "../index.css";
 const Poster = () => {
   return (
     <>
-      <div style={{ width: "100%", height: "70vh" ,marginTop: "50px"}}>
+      <div className="poster-container1"
+      style={{ width: "100%", height: "70vh" ,marginTop: "50px"}}>
         <img className="img-home"
           src="https://images.pexels.com/photos/3865911/pexels-photo-3865911.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Poster"

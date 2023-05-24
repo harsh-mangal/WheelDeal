@@ -99,6 +99,7 @@ body{
   text-align: center;
   padding-top: 50px !important;
   padding: 100px;
+  background-color: #ebe6e5;
 }
 
 .content-home p {
@@ -109,4 +110,167 @@ body{
 .content-home h4 {
   font-size: 24px;
   font-weight: bold;
+}
+.poster-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  
+}
+
+.photo-side {
+  max-width: 60vw;
+  /* width: 70vw; */
+  /* Add any desired styles for the photo side */
+}
+
+.content-side {
+  text-align: center;
+}
+
+.content-side h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content-side p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.photo{
+  width: 800px;
+  height: 500px;
+  border-radius: 20px;
+
+}
+.poster-container1{
+  background-color: #ebe6e5;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.poster3-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7d8da;
+}
+
+.poster3-content {
+  width: 50%;
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.poster3-image {
+  width: 50%;
+  padding: 20px;
+}
+
+.poster3-img {
+  width: 100%;
+  height: auto;
+}
+.photo2{
+  width: 700px;
+  height: 500px;
+  border-radius: 20px;
+
+}
+.poster3-content h4 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.poster3-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+}
+
+.contact-form {
+  width: 50%;
+}
+
+.contact-form form {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  background-color: #e5e3e3;
+}
+
+.contact-form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 600px;
+  background-color: #FFC107 !important;
+}
+
+.contact-content {
+  width: 50%;
+  text-align: center;
+}
+
+.contact-content h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.footer-container {
+  background-color: #FFC107;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.footer-icon {
+  color: #333;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.footer-icon:hover {
+  color: #007bff;
 }
