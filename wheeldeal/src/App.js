@@ -1,9 +1,14 @@
 import './App.css';
+import MyCarousel from './components/MyCarousel';
+import Navbar from './components/Navbar';
+import Poster from './components/Poster';
 
 function App() {
   return (
     <div className="App">
-      this is react app
+      <Navbar/>
+      <MyCarousel />
+      <Poster/>
     </div>
   );
 }
