@@ -1,0 +1,32 @@
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .left-section {
+    text-align: center;
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .right-section input[type="text"],
+  .right-section input[type="email"],
+  .right-section input[type="password"] {
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .right-section button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

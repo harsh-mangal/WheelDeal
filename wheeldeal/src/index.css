@@ -297,7 +297,7 @@ body{
 
 /* Optional: Add animation for button hover effect */
 .spin-button:hover {
-  animation-name: spin-animation;
+  /* animation-name: spin-animation; */
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-iteration-count: 1;
@@ -313,4 +313,9 @@ body{
   100% {
     transform: rotate(360deg);
   }
+}
+.spin-a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }

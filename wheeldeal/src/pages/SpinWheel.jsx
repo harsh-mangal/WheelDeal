@@ -1,5 +1,7 @@
 import React from "react";
 import "./SpinWheel.css";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
 const SpinWheel = () => {
   const spin = () => {
@@ -76,53 +78,59 @@ const SpinWheel = () => {
   };
 
   return (
-    <div className="spin-main-box">
-    <div className="mainbox" id="mainbox">
-      <div className="box" id="box">
-        <div className="box1">
-          <span className="font span1">
-            <b>20% Discount</b>
-          </span>
-          <span className="font span2">
-            <b>Bad Luck!</b>
-          </span>
-          <span className="font span3">
-            <b>Try Again</b>
-          </span>
-          <span className="font span4">
-            <b>Free Airpods</b>
-          </span>
-          <span className="font span5">
-            <b>100 Rs 
-                < br/>Voucher</b>
-                <br/>
-          </span>
-        </div>
-        <div className="box2">
-          <span className="font span1">
-            <b>one more chance</b>
-          </span>
-          <span className="font span2">
-            <b>
-              2 Free Service
-            </b>
-          </span>
-          <span className="font span3">
-            <b>Ipad Mini 4</b>
-          </span>
-          <span className="font span4">
-            <b>Exclusive Gift</b>
-          </span>
-          <span className="font span5">
-            <b>
-              Try Again
-            </b>
-          </span>
+    <>
+     <Navbar/>
+      <div className="spin-main-box">
+        <p className="p-w">Welcome to wheelDeal!</p>
+        <div className="mainbox" id="mainbox">
+          <div className="box" id="box">
+            <div className="box1">
+              <span className="font span1">
+                <b>20% Discount</b>
+              </span>
+              <span className="font span2">
+                <b>Bad Luck!</b>
+              </span>
+              <span className="font span3">
+                <b>Try Again</b>
+              </span>
+              <span className="font span4">
+                <b>Free Airpods</b>
+              </span>
+              <span className="font span5">
+                <b>
+                  100 Rs
+                  <br />
+                  Voucher
+                </b>
+                <br />
+              </span>
+            </div>
+            <div className="box2">
+              <span className="font span1">
+                <b>one more chance</b>
+              </span>
+              <span className="font span2">
+                <b>2 Free Service</b>
+              </span>
+              <span className="font span3">
+                <b>Ipad Mini 4</b>
+              </span>
+              <span className="font span4">
+                <b>Exclusive Gift</b>
+              </span>
+              <span className="font span5">
+                <b>Try Again</b>
+              </span>
+            </div>
+          </div>
+          <button className="spin" onClick={spin}>
+            SPIN
+          </button>
         </div>
       </div>
-      <button className="spin" onClick={spin}>SPIN</button>
-    </div>
-    </div>
+      <Footer/>
+    </>
   );
 };
 

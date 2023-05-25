@@ -22,14 +22,14 @@ const Navbar = () => {
               </a> */}
             </div>
             <div className="d-flex justify-content-first mid">
-              <a className="navbar-brand" href="#">
+              <a className="navbar-brand" href="/">
                 WheelDeal
               </a>
             </div>
 
-            <a href="#" className="icon-a d-flex justify-content-end">
-              <i class="ri-account-circle-fill nav-icon"></i>
-            </a>
+              <a href="/login" className="icon-a d-flex justify-content-end">
+                <i class="ri-account-circle-fill nav-icon"></i>
+              </a>
           </div>
         </div>
       </nav>

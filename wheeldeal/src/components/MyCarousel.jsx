@@ -28,7 +28,8 @@ const MyCarousel = () => {
             brings a new level of excitement to the world of online shopping.
           </p>
           <button className="spin-button">
-            <span className="button-text">Let's Spin</span>
+            <a href="/spin" className="spin-a">Let's Spin</a>
+            {/* <span className="button-text">Let's Spin</span> */}
           </button>
         </div>
       </div>
@@ -49,7 +50,8 @@ const MyCarousel = () => {
             unbeatable deals.
           </p>
           <button className="spin-button">
-            <span className="button-text">Let's Spin</span>
+            <a href="/spin" className="spin-a">Let's Spin</a>
+            {/* <span className="button-text">Let's Spin</span> */}
           </button>
         </div>
       </div>
@@ -68,7 +70,8 @@ const MyCarousel = () => {
             <br /> Get ready to embark on an epic discount-hunting journey!
           </p>
           <button className="spin-button">
-            <span className="button-text">Let's Spin</span>
+            <a href="/spin" className="spin-a">Let's Spin</a>
+            {/* <span className="button-text">Let's Spin</span> */}
           </button>
         </div>
       </div>
