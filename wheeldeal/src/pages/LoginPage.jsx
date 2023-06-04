@@ -1,15 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./LoginPage.css"; // Import custom CSS file for styling
-import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const LoginPage = () => {
-  const Navigate = useNavigate();
-  const [email, setEmail] = useState("");
+  const navigate = useNavigate();
+  const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
   };
 
   const handlePasswordChange = (e) => {
@@ -19,24 +19,33 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Send login data to the backend API
-    fetch("/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ email, password }),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log(data); // Display response from the backend
-        // Handle success or display an error message
+    const user = {
+      username: username,
+      password: password,
+    };
+
+    axios
+      .post("http://localhost:3000/login", user)
+      .then((response) => {
+        console.log("User logged in successfully");
+        const token = response.data.token;
+      // Save token to local storage
+      localStorage.setItem("token", token);
+        alert("User logged in successfully");
+        navigate("/home");
+        window.location.reload(); // Refresh the page
+        // Handle successful login, e.g., redirect to another page
       })
       .catch((error) => {
-        console.error("Error:", error);
-        // Handle error or display an error message
+        if(error.response.status === 401){
+          alert("Invalid username or password");
+          console.error("Login failed:", error);
+        }
+        
+        // Handle login error, e.g., display an error message
       });
   };
+
   return (
     <>
       <div className="login-container">
@@ -55,10 +64,10 @@ const LoginPage = () => {
         <div className="right-section">
           <form onSubmit={handleSubmit}>
             <input
-              type="email"
-              placeholder="Email"
-              value={email}
-              onChange={handleEmailChange}
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={handleUsernameChange}
             />
             <br />
             <input

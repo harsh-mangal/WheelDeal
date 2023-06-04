@@ -13,7 +13,8 @@ function App() {
     <Navbar/>
     <Router>
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/" element={<LoginPage/>}/>
         <Route exact path="/register" element={<RegisterPage />} />
         <Route exact path="/login" element={<LoginPage />} />
         <Route exact path="/spin" element={<SpinWheel />} />
