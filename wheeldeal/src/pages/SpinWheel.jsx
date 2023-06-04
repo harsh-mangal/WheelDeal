@@ -79,7 +79,6 @@ const SpinWheel = () => {
 
   return (
     <>
-     <Navbar/>
       <div className="spin-main-box">
         <p className="p-w">Welcome to wheelDeal!</p>
         <div className="mainbox" id="mainbox">
@@ -129,7 +128,6 @@ const SpinWheel = () => {
           </button>
         </div>
       </div>
-      <Footer/>
     </>
   );
 };

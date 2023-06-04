@@ -11,13 +11,11 @@ import SpinWheel from './SpinWheel'
 const Home = () => {
   return (
     <div>
-      <Navbar/>
       <MyCarousel />
       <Poster/>
       <Poster2/>
       <Poster3/>
       <ContactForm/>
-      <Footer/>
       {/* <SpinWheel/> */}
     </div>
   )

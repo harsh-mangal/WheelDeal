@@ -1,12 +1,26 @@
 .register-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 66.9vh;
+  background-image: url('../pages/images/bg.png');
+  background-position: center;
+  /* bakcground-fit: center; */
+  background-repeat: no-repeat;
+  /* background-origin: content-box; */
+  background-size: 150% auto;
   }
   
-  .left-section {
+  .left-section-r {
     text-align: center;
+    height: 63.3vh;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 100px;
+    background-color: #7a8e3e6c;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    /* border-radius: 20px; */
   }
   
   .right-section {
