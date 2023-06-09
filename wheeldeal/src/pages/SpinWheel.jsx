@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./SpinWheel.css";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+
 
 const SpinWheel = () => {
+
+ 
+  
   const spin = () => {
     const box = document.getElementById("box");
     const element = document.getElementById("mainbox");
@@ -80,7 +82,7 @@ const SpinWheel = () => {
   return (
     <>
       <div className="spin-main-box">
-        <p className="p-w">Welcome to wheelDeal!</p>
+        <p className="p-w">Welcome to WheelDeal!!</p>
         <div className="mainbox" id="mainbox">
           <div className="box" id="box">
             <div className="box1">
